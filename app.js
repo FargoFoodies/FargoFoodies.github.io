@@ -18,6 +18,22 @@ const navSlide = () => {
         // burger anumation
         burger.classList.toggle('toggle');
     })
+
+    nav.addEventListener('click', ()=>{
+      nav.classList.toggle('nav-active')
+      // Animate Links
+      navLinks.forEach((link,index) =>{
+          if(link.style.animation){
+              link.style.animation = ''
+          }else{
+              link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`
+          }
+      })
+
+      // burger anumation
+      burger.classList.toggle('toggle');
+      
+    })
 }
 const inputs = document.querySelectorAll(".input");
 
