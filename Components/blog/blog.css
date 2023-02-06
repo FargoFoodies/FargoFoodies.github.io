@@ -169,10 +169,15 @@ nav {
 .nav-active {
     transform: translateX(0%);
 }
+@media screen and (max-width: 480px) {
+
+    
+
+}
 
 h2{
     margin-top: 25%;
-    margin-left: 45%;
+   text-align: center;
     color: black;
 }
 
