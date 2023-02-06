@@ -556,3 +556,12 @@ footer ul li a:hover{
     font-weight: 700;
     color: #8A3033;
 }
+
+/* Blog */
+.comingSoon{
+   
+        margin-top: 25%;
+       text-align: center;
+        color: black;
+    
+}
