@@ -15,6 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./contactUs.css">
+    <link rel="stylesheet" href="/carousel.css">
 </head>
 
 <body>
@@ -52,7 +53,23 @@
     <div class="main">
         <div class="main_container">
             <div class="main_img-container">
-                <img src="/assets/images/Main_Image2.png" alt="background" id="main_img">
+                <section aria-label="Newest Photos">
+                    <div class="carousel" data-carousel>
+                        <button class="carousel-button prev" data-carousel-button="prev">&#8666</button>
+                        <button class="carousel-button next" data-carousel-button="next">&#8667</button>
+                    <ul class="Unordered" data-slides>
+                        <li class="slide" data-active>
+                            <img src="./assets/images/Main_Image2.png" alt="People eating2">
+                        </li>
+                        <li class="slide" >
+                            <img src="./assets/images/Main_Image.png" alt="People eating1">
+                        </li>
+                        <li class="slide">
+                            <img src="./assets/images/Main_Image3.png" alt="People eating3">
+                        </li>
+                    </ul>
+                </div>
+                </section>
             </div>
             <div class="main_content">
                 <h1>Mission</h1>
@@ -76,7 +93,7 @@
             <div class="member_column">
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/Founder1.png" alt="">
+                        <img id="1" src="/assets/images/Founder1.png" alt="">
                     </div>
                     <h3>Ujjwal Adhikari</h3>
                     <p>Founder</p>
@@ -89,7 +106,7 @@
             <div class="member_column">
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/Founder2.png" alt="">
+                        <img id="2" src="/assets/images/Founder2.png" alt="">
                     </div>
                     <h3>Anjali Bhujel</h3>
                     <p>Founder</p>
