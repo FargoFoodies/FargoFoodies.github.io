@@ -43,7 +43,7 @@ transition-delay:0ms;
     font-size: 5rem;
     top: 50%;
     transform: translateY(-50%);
-    color:aquamarine;
+    color:black;
     opacity: .5;
     cursor: pointer;
     border-radius: .25rem;
@@ -51,15 +51,15 @@ transition-delay:0ms;
 }
 
 .carousel-button:hover{
-    color: white;
+    color: #8A3033;
 
 }
 
 
 
 .carousel-button.prev{
-    left: 1rem;
+   right: 54.8vw;
 }
 .carousel-button.next{
-    right: 1.9rem;
+    left: 54.8vw;
 }
