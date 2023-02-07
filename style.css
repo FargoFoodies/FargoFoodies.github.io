@@ -598,7 +598,7 @@ footer .social i{
     font-size: 30px;
     color: inherit;
     border: 1px solid #ccc;
-    color: #ccc;
+    color: var( --clr-logo);
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -621,7 +621,7 @@ footer ul{
     text-align: center;
 }
 footer ul li a{
-    color: inherit;
+    color: var(--clr-logo);
     text-decoration: none;
 }
 
