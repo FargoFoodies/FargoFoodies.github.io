@@ -77,14 +77,15 @@ nav {
     width: 4.25em;
     margin-right: 55%;
     display: flex;
-}
-
-.logo {
     color: var(--clr-logo);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.logo:hover {
+ cursor: pointer;
 }
 
 .logo h4 {
@@ -571,7 +572,7 @@ section{
 }
 
 .card:hover {
-
+    cursor:default;
     background-color: transparent;
     background: linear-gradient(#3b413c, #3b413c);
 }
@@ -677,7 +678,7 @@ footer ul li a:hover{
 
 .blog-heading h3{
     font-size:2.4rem;
-    color: black;
+    color: var(--clr-logo);
     font-weight: 600;
 }
 
@@ -691,7 +692,7 @@ footer ul li a:hover{
 
 .blog-box{
     width: 350px;
-    background-color: #FFFFFF;
+    background-color: var(--clr-contact);
     border: 1px solid #ececec;
     margin: 20px;
 }
