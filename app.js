@@ -78,9 +78,37 @@ buttons.forEach(button => {
   })
 })
 
+const colorThemes= document.querySelectorAll('[name="theme"]')
+// Store Theme
+const storeTheme = function (theme){
+  localStorage.setItem("theme", theme)
+}
+//Apply Theme
+const setTheme = function(){
+  const activeTheme =   localStorage.getItem("theme");
+  colorThemes.forEach((themeOption)=>{
+    if(themeOption.id === activeTheme){
+      themeOption.checked = true;
+    }
+  })
+  // fall back for no has support
+  document.documentElement.className = theme;
+}
+// Store Theme
+colorThemes.forEach(themeOption =>{
+  themeOption.addEventListener('click', ()=>{
+    storeTheme(themeOption.id);
+  })
+})
+
+
+
 const app = () =>{
     navSlide()
 }
 
 
 app()
+
+
+document.onload = setTheme();

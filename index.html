@@ -14,7 +14,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./contactUs.css">
     <link rel="stylesheet" href="/carousel.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io/favicon.ico">
 </head>
@@ -26,6 +25,16 @@
             <img style="float:left" class="logo" src="/assets/images/FoodieLogo.svg" alt="Food">
             <h4> Fargo Foodies </h4>
         </div>
+        <form class="theme-form" action="">
+            <fieldset>
+                <legend class="visually-hidden"> Pick a color</legend>
+                <label class="visually-hidden" for="green">Green</label>
+                <input type="radio" name="theme" id="green" checked>
+    
+                <label class="visually-hidden" for="dark">Dark</label>
+                <input type="radio" name="theme" id="dark" >
+            </fieldset>
+        </form>
         <ul class="nav-links">
             <li>
                 <a href="#">Home</a>
@@ -50,6 +59,8 @@
         </div>
 
     </nav>
+
+  
     <!-- Main Section-->
     <div class="main">
         <div class="main_container">
@@ -58,24 +69,25 @@
                     <div class="carousel" data-carousel>
                         <button class="carousel-button prev" data-carousel-button="prev">&#8666</button>
                         <button class="carousel-button next" data-carousel-button="next">&#8667</button>
-                    <ul class="Unordered" data-slides>
-                        <li class="slide" data-active>
-                            <img src="./assets/images/Main_Image2.png" alt="People eating2">
-                        </li>
-                        <li class="slide" >
-                            <img src="./assets/images/Main_Image.png" alt="People eating1">
-                        </li>
-                        <li class="slide">
-                            <img src="./assets/images/Main_Image3.png" alt="People eating3">
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="Unordered" data-slides>
+                            <li class="slide" data-active>
+                                <img src="./assets/images/Main_Image2.png" alt="People eating2">
+                            </li>
+                            <li class="slide">
+                                <img src="./assets/images/Main_Image.png" alt="People eating1">
+                            </li>
+                            <li class="slide">
+                                <img src="./assets/images/Main_Image3.png" alt="People eating3">
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
             <div class="main_content">
                 <h1>Mission</h1>
                 <h2>Connecting People together through Food</h2>
-                <p>This group was created in order to connect people to each other and promote local restaurants! We meet
+                <p>This group was created in order to connect people to each other and promote local restaurants! We
+                    meet
                     every other Wednesday and would love for everyone to join us!
                 </p>
                 <button class="main_btn"><a href="#contact-tittle">Join us!</a></button>
@@ -86,123 +98,127 @@
 
     <!-- Members -->
 
-   
-        <div class="members" >
-            <h1> Founders</h1>
-        </div>
-        <div class="members">
-            <div class="member_column">
-                <div class="card">
-                    <div class="img-container">
-                        <img id="1" src="/assets/images/Founder1.png" alt="">
-                    </div>
-                    <h3>Ujjwal Adhikari</h3>
-                    <p>Founder</p>
-                    <div class="icons">
-                        <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/ujjwal-adhikari/"> <i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+
+    <div class="members">
+        <h1> Founders</h1>
+    </div>
+    <div class="members">
+        <div class="member_column">
+            <div class="card">
+                <div class="img-container">
+                    <img id="1" src="/assets/images/Founder1.png" alt="">
+                </div>
+                <h3>Ujjwal Adhikari</h3>
+                <p>Founder</p>
+                <div class="icons">
+                    <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/ujjwal-adhikari/"> <i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <!-- 2nd person-->
-            <div class="member_column">
-                <div class="card">
-                    <div class="img-container">
-                        <img id="2" src="/assets/images/Founder2.png" alt="">
+        </div>
+        <!-- 2nd person-->
+        <div class="member_column">
+            <div class="card">
+                <div class="img-container">
+                    <img id="2" src="/assets/images/Founder2.png" alt="">
+                </div>
+                <h3>Anjali Bhujel</h3>
+                <p>Founder</p>
+                <div class="icons">
+                    <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/anjali-bhujel/"> <i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd founder-->
+        <div class="member_column">
+            <div class="card">
+                <div class="img-container">
+                    <img src="/assets/images/Founder3.png" alt="">
+                </div>
+                <h3>Yvette Reyes</h3>
+                <p>Founder</p>
+                <div class="icons">
+                    <a rel="noreferrer noopener" target="_blank"
+                        href="https://www.linkedin.com/in/yvette-reyes-63033a199/"> <i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact us -->
+    <h2 class="contact-tittle" id="contact-tittle">Contact us</h2>
+    <div class="container">
+
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Catch us at start up Brew every wednesday morning 8 AM - 9:30 AM
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <i class="fa-sharp fa-solid fa-map-location-dot"></i>
+                        <p> Drekker Brewing Company
+                            1666 1st Ave N
+                            Fargo, ND 58102</p>
                     </div>
-                    <h3>Anjali Bhujel</h3>
-                    <p>Founder</p>
-                    <div class="icons">
-                        <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/anjali-bhujel/"> <i class="fa-brands fa-linkedin"></i></a>
+                    <div class="information">
+                        <img src="img/email.png" class="icon" alt="" />
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- 3rd founder-->
-            <div class="member_column">
-                <div class="card">
-                    <div class="img-container">
-                        <img src="/assets/images/Founder3.png" alt="">
+            <div class="contact-form">
+
+                <form autocomplete="off" action="https://formsubmit.co/dbbbbb695c9b2d01a7c6605f783d06ae" method="POST">
+                    <h3 class="title">Interested in joining?</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Name</label>
+                        <span>Name</span>
                     </div>
-                    <h3>Yvette Reyes</h3>
-                    <p>Founder</p>
-                    <div class="icons">
-                        <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/yvette-reyes-63033a199/"> <i class="fa-brands fa-linkedin"></i></a>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
                     </div>
-                </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Why do you want to join?</label>
+                        <span>Why do you want to join?</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
             </div>
         </div>
-        <!-- contact us -->
-        <h2 class="contact-tittle" id="contact-tittle">Contact us</h2>
-        <div class="container">
-            
-            <div class="form" >
-              <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
-                <p class="text">
-                Catch us at start up Brew every wednesday morning 8 AM - 9:30 AM
-                </p>
-      
-                <div class="info">
-                  <div class="information">
-                    <i class="fa-sharp fa-solid fa-map-location-dot"></i>
-                    <p>  Drekker Brewing Company
-                        1666 1st Ave N
-                        Fargo, ND 58102</p>
-                  </div>
-                  <div class="information">
-                    <img src="img/email.png" class="icon" alt="" />
-                    <p></p>
-                  </div>
-                </div>
-      
-                <div class="social-media">
-                  <p>Connect with us :</p>
-                  <div class="social-icons">
-                    <a href="#">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="contact-form">
-      
-                <form  autocomplete="off" action="https://formsubmit.co/dbbbbb695c9b2d01a7c6605f783d06ae" method="POST">
-                  <h3 class="title">Interested in joining?</h3>
-                  <div class="input-container">
-                    <input type="text" name="name" class="input" />
-                    <label for="">Name</label>
-                    <span>Name</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="email" name="email" class="input" />
-                    <label for="">Email</label>
-                    <span>Email</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="tel" name="phone" class="input" />
-                    <label for="">Phone</label>
-                    <span>Phone</span>
-                  </div>
-                  <div class="input-container textarea">
-                    <textarea name="message" class="input"></textarea>
-                    <label for="">Why do you want to join?</label>
-                    <span>Why do you want to join?</span>
-                  </div>
-                  <input type="submit" value="Send" class="btn" />
-                </form>
-              </div>
-            </div>
-          </div>
-        
+    </div>
+
     <!--  footer -->
     <footer>
         <div class="social">
-           <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
-           <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
         </div>
         <ul class="list">
             <li>
@@ -224,7 +240,7 @@
         <p class="copywrite">Fargo Foodies @ 2023</p>
     </footer>
 
-  
+
     <script src="app.js"></script>
 </body>
 
