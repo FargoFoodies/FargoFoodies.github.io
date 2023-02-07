@@ -517,7 +517,7 @@ section{
 }
 
 .card {
-    box-shadow: 0 0 .35em black;
+    box-shadow: 0 0 .5em black;
     padding: 3.5em 1em;
     border-radius: .6em;
     color: #8A3033;
@@ -573,7 +573,7 @@ section{
 .card:hover {
 
     background-color: transparent;
-    background: linear-gradient(#94D1BE, #94D1BE);
+    background: linear-gradient(#3b413c, #3b413c);
 }
 
 .card:hover .img-container {
@@ -906,7 +906,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #9DB5B2;
+  background-color: transparent;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -921,7 +921,7 @@ textarea.input {
 
 .input-container.focus label {
   top: 0;
-  transform: translateY(-50%);
+  transform: translateY(-85%);
   left: 25px;
   font-size: 0.8rem;
 }
