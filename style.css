@@ -401,6 +401,7 @@ section{
     
     
     }
+  
 }
     
 
@@ -1135,7 +1136,7 @@ appearance: none;
     position: relative;
     display: block;
     background: var(--radio-color, currentColor);
-    border-radius: 200px;
+    border-radius: 3em;
     cursor: pointer;
 outline: 3px solid var(--radio-color, currentColor);
 transition: .3s;
