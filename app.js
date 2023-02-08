@@ -78,28 +78,30 @@ buttons.forEach(button => {
   })
 })
 
-const colorThemes= document.querySelectorAll('[name="theme"]')
+var colorThemes = document.getElementById("dark");
+
 // Store Theme
-const storeTheme = function (theme){
-  localStorage.setItem("theme", theme)
+const storeTheme = function (isChecked){
+  localStorage.setItem("isChecked", isChecked)
 }
 //Apply Theme
 const setTheme = function(){
-  const activeTheme =   localStorage.getItem("theme");
-  colorThemes.forEach((themeOption)=>{
-    if(themeOption.id === activeTheme){
-      themeOption.checked = true;
-    }
-  })
+  const isItChecked = localStorage.getItem("isChecked");
+  if(isItChecked === 'false'){
+    colorThemes.checked = false
+  }else{
+    colorThemes.checked = true
+  }
+
+
   // fall back for no has support
-  document.documentElement.className = theme;
+  document.documentElement.className = isItChecked;
 }
 // Store Theme
-colorThemes.forEach(themeOption =>{
-  themeOption.addEventListener('click', ()=>{
-    storeTheme(themeOption.id);
+colorThemes.addEventListener('click', ()=>{
+    storeTheme(colorThemes.checked);
   })
-})
+
 
 
 
