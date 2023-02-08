@@ -12,6 +12,7 @@
     --clr-social:hsl(0 0% 25%);
     --clr-logo:hsl(0 0% 15%);
     --clr-contact: hsla(172, 14%, 66%, 1);
+   --clr-members:rgba(222, 231, 231, 1);
 }
 body{
     background-color: var(--clr-body);
@@ -430,8 +431,8 @@ section{
 
 .main_content h2 {
     font-size: 2rem;
-    background-color: #9DB5B2;
-    background-image: linear-gradient(to top, #3B413C 0%, #3B413C 100%);
+    background-color: var(--clr-logo);
+    opacity: 80%;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -521,9 +522,10 @@ section{
     box-shadow: 0 0 .5em black;
     padding: 3.5em 1em;
     border-radius: .6em;
-    color: #8A3033;
+    color: var( --clr-logo);
     cursor: pointer;
     transition: 0.3s;
+    background-color: var(--clr-members);
 }
 
 .card .img-container {
@@ -574,7 +576,7 @@ section{
 .card:hover {
     cursor:default;
     background-color: transparent;
-    background: linear-gradient(#3b413c, #3b413c);
+    background: linear-gradient(#D6D6B1, #D6D6B1);
 }
 
 .card:hover .img-container {
@@ -644,7 +646,7 @@ footer ul li a:hover{
 
 .contact-tittle{
     margin-left: 42%;
-    margin-top: 20rem;
+    margin-top: 16rem;
     font-size: 3rem;
     font-weight: 700;
     color: #8A3033;
@@ -1151,9 +1153,10 @@ border-radius: 50%;
 
 .dark,:root:has(#dark:checked){
     --clr-body:hsla(209 50% 10% );
-    --clr-card-bg:hsl(0 0% 100%);
+   --clr-members: rgba(79, 100, 111, 1);
     --clr-logo:hsl(0 0% 100%);
     --clr-contact:hsla(130, 5%, 24%, 1);
+    
     
 }
 
