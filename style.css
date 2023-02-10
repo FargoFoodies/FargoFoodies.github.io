@@ -1300,6 +1300,7 @@ transition-delay:0ms;
     background-color: var(--clr-contact);
     box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    margin-bottom: 14em;
 }
 
 .event-img-container,
@@ -1429,6 +1430,7 @@ transition-delay:0ms;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 8em;
+    margin-top: 9em;
+    margin-bottom: 2em;
     color: var(--clr-logo);
 }
