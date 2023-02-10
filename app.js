@@ -66,7 +66,6 @@ inputs.forEach((input) => {
 
 
 
-
 // Carosel
 
 const buttons = document.querySelectorAll("[data-carousel-button]")
