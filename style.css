@@ -1157,7 +1157,7 @@ transition: .3s;
 }
 .theme-form input[type="checkbox"]:checked:after{
   
-    transform: translate(330%);
+    transform: translate(340%);
     content: url('./assets/images/darkmode.png');
 }
 
