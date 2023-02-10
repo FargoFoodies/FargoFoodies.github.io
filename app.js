@@ -2,6 +2,12 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav  = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li')
+    const moon = document.querySelector('.Moon-Sun')
+    const Theme = document.querySelector("theme-form")
+
+
+
+
 
     burger.addEventListener('click', ()=>{
         // toggle Nav
@@ -18,6 +24,8 @@ const navSlide = () => {
         // burger anumation
         burger.classList.toggle('toggle');
     })
+
+
 
     nav.addEventListener('click', ()=>{
       nav.classList.toggle('nav-active')
@@ -55,6 +63,8 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+
 
 
 // Carosel
