@@ -1,9 +1,5 @@
-
-#remove html file extension https://fargofoodies.com/index.html
-# to https://fargofoodies.com/Home
-#remove html file extension https://fargofoodies.com/events.html
-# to https://fargofoodies.com/Events
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC, L]
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
