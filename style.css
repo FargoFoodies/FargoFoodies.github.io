@@ -161,6 +161,10 @@ nav {
 }
 @media screen and (max-width: 1350px) {
 
+    .contact-tittle{
+        margin-left: 37% !important;
+    }
+
 
     /* Blog */
     .blog-box{
@@ -310,7 +314,12 @@ section{
 }
 
 @media screen and (max-width: 850px) {
- /* Themes*/
+ 
+ .contact-tittle{
+     margin-left: 25% !important;
+ }
+ 
+    /* Themes*/
  .theme-form{
     margin-top: 10%;
 
@@ -376,7 +385,10 @@ section{
 }
 
 @media screen and (max-width: 500px){
-     /* Themes*/
+    .contact-tittle{
+        margin-left: 20% !important;
+    }
+    /* Themes*/
 
      
 
