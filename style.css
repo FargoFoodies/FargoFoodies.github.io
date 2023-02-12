@@ -1473,6 +1473,7 @@ transition-delay:0ms;
 
 /* Rugsan blog */
 .blog-text{
+    background-color:var(--clr-contact) ;
     margin-top: 5em;
     text-align: center;
 }
@@ -1485,4 +1486,20 @@ transition-delay:0ms;
 
 .blog-text h2{
     color: white;
+}
+
+.blog-text img{
+    width: 30%;
+   height:20em;
+   align-items: center;
+   margin-left: 35%;
+}
+.blog-text p{
+    color: var(--clr-logo);
+    font-size: 1.5em;
+    background-color:var(--clr-contact) ;
+    width: 37em;
+    margin-left: 27%;
+    height: 20em;
+    letter-spacing: .1em;
 }
