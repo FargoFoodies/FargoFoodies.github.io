@@ -548,6 +548,8 @@ section{
     cursor: pointer;
     transition: 0.3s;
     background-color: var(--clr-members);
+    overflow: hidden;
+    position: relative;
 }
 
 .card .img-container {
@@ -1502,4 +1504,100 @@ transition-delay:0ms;
     margin-left: 27%;
     height: 20em;
     letter-spacing: .1em;
+}
+
+
+
+/* Card border Animation */
+
+.card span:nth-child(1)
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, var(--clr-logo));
+    animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one
+{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translatex(100%);
+    }
+
+}
+
+.card span:nth-child(2)
+{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--clr-logo));
+    animation: animate_two 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_two
+{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+
+}
+
+.card span:nth-child(3)
+{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent,  var(--clr-logo));
+    animation: animate_three 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_three
+{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+
+}
+
+
+.card span:nth-child(4)
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, var(--clr-logo));
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four
+{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+
 }
