@@ -44,6 +44,9 @@ const navSlide = () => {
     })
 }
 
+
+
+
 // Contact Form
 const inputs = document.querySelectorAll(".input");
 
@@ -138,6 +141,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
 
 
 app()

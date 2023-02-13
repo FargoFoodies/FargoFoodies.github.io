@@ -1601,3 +1601,88 @@ transition-delay:0ms;
     }
 
 }
+
+
+
+/* Image CGallery */
+
+.Image-heading{
+    margin-top: 1.5em;
+    color: var(--clr-logo);
+    font-size: 3em;
+    text-align: center;
+}
+.imgScroll{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.imgScroll div{
+    display: flex;
+    animation: animate1div 40s linear infinite;
+    animation-delay: -40s;
+}
+.imgScroll div:nth-child(2){
+    animation: animate2div 40s linear infinite;
+    animation-delay: -20s;
+}
+
+.imgScroll:hover div,
+.imgScroll.hover div:nth-child(2)
+{
+    animation-play-state: paused;
+}
+
+
+@keyframes animate1div {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes  animate2div{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+.imgScroll div img{
+    margin: 0 25px;
+    max-width: 350px;
+    border:10px solid transparent ;
+    transition: .25s;
+}
+
+.imgScroll div img:hover{
+    border: 10px solid #fff;
+    box-sizing: 0 20px 40px  rgba(0,0,0,0.1);
+}
+
+.imgScroll:hover div img{
+    opacity: .05;
+    filter: blur(5px);
+}
+.imgScroll div img:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.footer{
+    position:fixed;
+    margin-top: 2em;
+    left:0px;
+    bottom:0px;
+    height:19vh;
+    width:100%;
+}
+
+
+
