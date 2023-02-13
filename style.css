@@ -817,6 +817,7 @@ color: black;
 }
 
 .form {
+    border: solid 1px var(--clr-logo);
   width: 100%;
   max-width: 820px;
   background-color:  var(--clr-body);
@@ -1142,7 +1143,7 @@ textarea.input {
 .theme-form{
     position: fixed;
    margin-left: 2%;
-   margin-bottom: 2%;
+   margin-bottom: 2.5%;
  
 }
 
