@@ -205,6 +205,20 @@ section{
 
 @media screen and (max-width: 1100px) {
 
+    .imgScroll div img:hover{
+       border: none !important;
+    
+    }
+    
+    .imgScroll:hover div img{
+        opacity: 1 !important;
+        filter: blur(0px) !important;
+    }
+    .imgScroll div img:hover{
+        opacity: 1;
+        filter: blur(0px);
+    }
+
     /*Theme  */
 
     .theme-form{
