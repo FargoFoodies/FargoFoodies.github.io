@@ -404,7 +404,12 @@ section{
 
 @media screen and (max-width: 350px){
 
-  
+  .theme-form{
+      margin-right: 7em;
+  }
+  .burger{
+      margin-right: 1em;
+  }
 }
     
 
