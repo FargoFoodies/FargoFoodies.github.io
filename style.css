@@ -1613,6 +1613,7 @@ transition-delay:0ms;
     text-align: center;
 }
 .imgScroll{
+    margin-bottom: 5em;
     position: absolute;
     left: 0;
     width: 100%;
@@ -1675,14 +1676,7 @@ transition-delay:0ms;
     filter: blur(0px);
 }
 
-.footer{
-    position:fixed;
-    margin-top: 2em;
-    left:0px;
-    bottom:0px;
-    height:19vh;
-    width:100%;
-}
+
 
 
 
