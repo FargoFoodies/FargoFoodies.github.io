@@ -1564,7 +1564,7 @@ transition-delay:0ms;
     height: 3px;
     background: linear-gradient(to left, transparent,  var(--clr-logo));
     animation: animate_three 2s linear infinite;
-    animation-delay: 1s;
+    
 }
 
 @keyframes animate_three
