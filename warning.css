@@ -36,7 +36,7 @@ transform: rotate(calc(var(--d) * 1deg)) translateY(calc(var(--y) * 1px));
     letter-spacing: .2em;
     white-space: nowrap;
     animation: animatewarning 200s linear infinite;
-    animation-delay: -60s;
+    animation-delay: -100s;
 }
 
 .warning-scroll div:nth-child(2){
