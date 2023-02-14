@@ -35,13 +35,13 @@ transform: rotate(calc(var(--d) * 1deg)) translateY(calc(var(--y) * 1px));
     text-transform: uppercase;
     letter-spacing: .2em;
     white-space: nowrap;
-    animation: animatewarning 60s linear infinite;
+    animation: animatewarning 200s linear infinite;
     animation-delay: -60s;
 }
 
 .warning-scroll div:nth-child(2){
-    animation: animatewarning2 60s linear infinite;
-    animation-delay: -30s;
+    animation: animatewarning2 150s linear infinite;
+    animation-delay: -75s;
 }
 
 @keyframes animatewarning{
