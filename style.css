@@ -916,7 +916,7 @@ textarea.input {
   transition: 0.5s;
 }
 
-.input-container.textarea label {
+.input-container.select label {
   top: 1rem;
   transform: translateY(0);
 }
@@ -1696,6 +1696,47 @@ transition-delay:0ms;
     filter: blur(0px);
 }
 
+
+.input-container select{
+    height: 3em;
+    width: 100%;
+    outline: 0;
+  border: 2px solid #fafafa;
+   box-shadow: none;
+  border-radius: 15em;
+  border-color: white;
+   background-color: inherit;
+   color: white;
+   cursor: pointer;
+   padding: 0 15px;
+   appearance: none;
+   -webkit-appearance: none;
+   
+}
+.restrurant::after{
+content: '';
+border-width: 5px;
+border-style: solid;
+border-color: transparent;
+border-top-color:white ;
+display: inline-block;
+position: absolute;
+right: 10px;
+bottom: 10px;
+border-radius: 2px;
+cursor: pointer;
+transition: 25s all ease;
+
+}
+
+.input-container select::-ms-expand{
+    display: none;
+}
+
+.input-container select:focus{
+    outline: none;
+    box-shadow:  0 0 10px -1px #1abc9c;
+}
 
 
 
