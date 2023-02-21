@@ -158,6 +158,14 @@ nav {
     .main{
         margin-top: 6.5em;
     }
+    .contact-form{
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+    .contact-info{
+         padding-top: 3em;
+      padding-bottom: 3em;
+    }
 }
 @media screen and (max-width: 1350px) {
 
