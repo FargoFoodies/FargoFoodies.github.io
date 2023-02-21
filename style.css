@@ -1539,7 +1539,7 @@ transition-delay:0ms;
 
 /* Card border Animation */
 
-.card span:nth-child(1)
+.card:hover span:nth-child(1)
 {
     position:absolute;
     top: 0;
@@ -1561,7 +1561,7 @@ transition-delay:0ms;
 
 }
 
-.card span:nth-child(2)
+.card:hover span:nth-child(2)
 {
     position:absolute;
     top: 0;
@@ -1584,7 +1584,7 @@ transition-delay:0ms;
 
 }
 
-.card span:nth-child(3)
+.card:hover span:nth-child(3)
 {
     position:absolute;
     bottom: 0;
@@ -1608,7 +1608,7 @@ transition-delay:0ms;
 }
 
 
-.card span:nth-child(4)
+.card:hover span:nth-child(4)
 {
     position:absolute;
     top: 0;
