@@ -21,6 +21,7 @@ body{
     background-color: var(--clr-body);
    list-style-type: none;
    text-decoration: none;
+   overflow-x: hidden;
 }
 
 /* Nav Code */
