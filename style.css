@@ -1482,6 +1482,10 @@ transition-delay:0ms;
     color: var(--clr-logo);
 }
 
+.events-heading p{
+    font-size: 1.3em;
+}
+
 
 
 /* Scroll to top button */
