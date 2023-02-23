@@ -1467,6 +1467,10 @@ transition-delay:0ms;
 .availabilty{
     color:#149279
 }
+.unavailabilty{
+    font-style: bold;
+    color:#8A3033;
+}
 
 .events-heading{
     display: flex;
